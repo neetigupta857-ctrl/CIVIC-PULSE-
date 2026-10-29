@@ -1,0 +1,38 @@
+[
+  {
+    "officerId": "admin-delhi",
+    "name": "Er. R. K. Mishra",
+    "badge": "Chief Executive Engineer - Road Infrastructure",
+    "salt": "d3a5cb982c8c98f8f9552693f19294ec",
+    "hash": "5ce2dbace031b10fceda4820e3a35f474ad105a8622afc88df319c3c02695554fe29997b24a7741c1cf1ffce68831f0e77760ce22d7ab655837f98e4dc1e2c04",
+    "createdAt": "2026-10-29T12:43:22.130Z",
+    "updatedAt": "2026-10-29T12:43:22.130Z"
+  },
+  {
+    "officerId": "admin-lucknow",
+    "name": "Er. S. N. Sharma",
+    "badge": "Zonal Municipal Commissioner",
+    "salt": "3406b5249e4d33f7e3c27ffc030cc426",
+    "hash": "3790083efacd9e670f34282a44ddb63db89d122fcfb6ba4a55949ce0591412c2fd723ddb4efd531daddde6d3f9d8234846aec2d546bba1a420b76bb09e536142",
+    "createdAt": "2026-10-29T12:43:22.139Z",
+    "updatedAt": "2026-10-29T12:43:22.139Z"
+  },
+  {
+    "officerId": "admin",
+    "name": "Municipal Administrator",
+    "badge": "State Urban Triage Directorate",
+    "salt": "abea2940205d32018b756cddc043ce5b",
+    "hash": "b2fff07f154593b68ae27ca9d81d10ee6d8e827715c5fa1334854e41beced30594dfee7d8619f0c00cd1d99db07326b4fe1656de742c185ec995d773c74c5be9",
+    "createdAt": "2026-10-29T12:44:44.883Z",
+    "updatedAt": "2026-10-29T12:44:44.892Z"
+  },
+  {
+    "officerId": "Chitransh Raizada",
+    "name": "Chitransh Raizada",
+    "badge": "Chief Administrator - Municipal Triage",
+    "salt": "8c0007d69825c8733cc2366e346b9e29",
+    "hash": "f01f1a419e76be1f3ca1143d267123cd9f8592ef69bedda54296a198ed12e7b5b7cd646228041217767af7ed0ce2040f74f87ad719a0a1abe470af9f434de773",
+    "createdAt": "2026-10-29T12:49:22.105Z",
+    "updatedAt": "2026-10-29T12:49:22.107Z"
+  }
+]

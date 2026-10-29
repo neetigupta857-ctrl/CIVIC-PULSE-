@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* CivicPulse Warm Beige & Rich Editorial Palette */
+    --canvas-base: #E8D9CB;        /* Main Warm Ivory/Sand Tone */
+    --canvas-highlight: #EFE4D9;   /* Subtle Warm Top/Center Gradient Stop */
+    --canvas-edge: #E3D2C1;        /* Subtle Warm Edge Stop */
+    --espresso: #211B17;           /* Deep Charcoal Headings */
+    --stone-muted: #554940;        /* Refined Body Text */
+    --border-warm: #C7AF99;        /* Warm Beige Borders & Dividers */
+
+    --bg-canvas: #E8D9CB;          /* Primary Background */
+    --header-bg: #F4ECE3;          /* Header Background */
+    --surface-section: #DFCCB9;    /* Section & Container Background */
+    --surface-elevated: #F5EDE4;   /* Elevated Card Surfaces */
+    --surface-well: #DFCCB9;       /* Recessed Well */
+    --surface-dark: #211B17;       /* Dark Contrast Blocks */
+
+    --brand-brown: #896648;        /* Primary Brand Brown Accent */
+    --brand-brown-hover: #6F4F36;  /* Darker Brown for Hover/Emphasis */
+    --accent-cashmere: #896648;
+    --accent-clay: #C2410C;        /* Critical Safety Indicator */
+    --accent-sage: #365344;        /* Verified / Success */
+    --border-taupe: #C7AF99;
+    --border-hairline: #C7AF99;
+    --text-espresso: #211B17;
+    --text-muted: #554940;
+
+    /* Stats Band & Design System Tokens */
+    --accent: oklch(33% 0 0);
+    --border: oklch(93.5% 0 0);
+    --neutral-0: oklch(100% 0 0);
+    --neutral-2: oklch(97.8% 0 0);
+    --neutral-7: oklch(59% 0 0);
+    --neutral-8: oklch(46% 0 0);
+    --neutral-11: oklch(15% 0 0);
+    --surface: var(--neutral-0);
+    --surface-muted: var(--neutral-2);
+    --text-secondary: var(--neutral-8);
+    --border-strong: oklch(82% 0 0);
+    --accent-strong: oklch(24% 0 0);
+    --space-1: .25rem;
+    --space-2: .5rem;
+    --space-3: .75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-10: 2.5rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    --space-20: 5rem;
+    --space-24: 6rem;
+    --radius-control: 1.125rem;
+    --tracking-display: -.03em;
+    --tracking-body: -.01em;
+    --leading-display: 1.1;
+    --leading-body: 1.4;
+    --ease-enter: cubic-bezier(.16,1,.3,1);
+    --ease-standard: cubic-bezier(.22,1,.36,1);
+    --ease-in-out: cubic-bezier(.65,0,.35,1);
+    --ease-spring: linear(0, 0.0258, 0.09, 0.1763, 0.2732, 0.3724, 0.4683, 0.5573, 0.6376, 0.7082, 0.7689, 0.8202, 0.8628, 0.8976, 0.9256, 0.9476, 0.9648, 0.9778, 0.9875, 0.9945, 0.9994, 1.0026, 1.0047, 1.0058, 1.0062, 1.0062, 1.0059, 1.0055, 1.0049, 1.0043, 1.0036, 1.0031, 1.0025, 1.002, 1.0016, 1.0013, 1);
+    --duration-standard: 240ms;
+    --duration-spring: 580ms;
+  }
+
+  body {
+    /* Subtle warm gradient between #EFE4D9 and #E3D2C1 anchored on #E8D9CB */
+    background: radial-gradient(circle at 50% 10%, var(--canvas-highlight) 0%, var(--canvas-base) 55%, var(--canvas-edge) 100%);
+    background-attachment: fixed;
+    color: var(--stone-muted);
+    font-family: var(--font-body), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading, .font-serif-heading {
+    font-family: var(--font-heading), system-ui, -apple-system, sans-serif;
+    letter-spacing: -0.025em;
+    color: var(--text-espresso);
+  }
+}
+
+/* Elevated container surfaces with rich warm beige styling */
+.editorial-card, .action-dock {
+  background-color: var(--surface-elevated);
+  border: 1px solid var(--border-warm);
+  box-shadow: 0 4px 20px -2px rgba(33, 27, 23, 0.05), 0 2px 6px -1px rgba(33, 27, 23, 0.03);
+}
+
+/* Custom scrollbars & clean minimal outlines */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #E8D9CB;
+}
+::-webkit-scrollbar-thumb {
+  background: #C7AF99;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #896648;
+}
+
+/* Leaflet map styles container */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.75rem;
+  z-index: 10;
+}
+
+/* Ensure custom placement marker and labels render above tiles */
+.custom-selected-pin {
+  z-index: 1000 !important;
+  pointer-events: auto !important;
+}
+
+.custom-selected-pin:hover {
+  filter: brightness(1.1);
+}
+
+.civic-marker-pin {
+  z-index: 500 !important;
+}
